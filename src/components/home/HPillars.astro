@@ -1,0 +1,94 @@
+---
+const items = [
+    {
+        name: "Clarity",
+        description: "Where are you going? Why and How are you getting there?"
+    },
+    {
+        name: "Compassion",
+        description: "Care beyond yourself. Listen…Appreciate…Serve."
+    },
+    {
+        name: "Character",
+        description: "Do right…do the best you can…treat others better than you like to be treated."
+    },
+    {
+        name: "Competency",
+        description: "Stay fresh, relevant and continually strive to grow."
+    },
+    {
+        name: "Commitment",
+        description: "Be resolved to continue despite challenge or setbacks. Honor your word."
+    },
+    {
+        name: "Connection",
+        description: "Engage in communication, seek to understand, be positive, be real, be a friend."
+    },
+    {
+        name: "Contribution",
+        description: "Give your time, money or resources to worthy causes. Results speak louder than words."
+    },
+    {
+        name: "Consistency",
+        description: "Maintain the same principles, processes and standards. People trust consistency."
+    }
+];
+
+---
+
+<!-- ! SECTION HPillars -->
+<section class="dark bg-black">
+    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+
+    <div class="mb-4">
+        <!-- Title -->
+    <div class="mt-5 max-w-2xl text-center mx-auto">
+      <h2 class="block font-bold text-gray-800 text-4xl md:text-5xl lg:text-6xl dark:text-neutral-200">
+        Pillars Of Trust
+      </h2>
+    </div>
+    <div class="mt-5 max-w-3xl text-center mx-auto">
+      <p class="text-lg text-gray-600 dark:text-neutral-400">Trust is NOT stated it is earned! Extend trust in your personal & professional life by embodiing the below pillars</p>
+    </div>
+    </div>
+
+    <!-- End Title -->
+        <!-- Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+          
+      
+         
+      
+          
+      
+          <!-- Icon Block -->
+          {items.map((item,i) => (
+            <div class="h-36 sm:h-56 flex flex-col justify-center border border-gray-200 rounded-xl text-center p-4 md:p-5 dark:border-neutral-700">
+            <!-- Icon -->
+            <div class="flex justify-center items-center size-12 bg-gradient-to-br from-blue-600 to-violet-600 rounded-lg mx-auto">
+              <svg class="flex-shrink-0 size-7 text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+            </div>
+            <!-- End Icon -->
+      
+            <div class="mt-3">
+              <h3 class="text-sm sm:text-lg font-semibold text-gray-800 dark:text-neutral-200">
+                {item.name}
+              </h3>
+              <p class="text-white text-sm">{item.description}</p>
+            </div>
+          </div>
+          ))}
+          <!-- End Icon Block -->
+      
+          
+      
+          
+      
+          
+      
+          
+        </div>
+        <!-- End Grid -->
+      </div>
+</section>
+<!-- ! END SECTION HPillars -->
