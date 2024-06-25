@@ -7,5 +7,5 @@ export default {
 		extend: {},
 	},
 	darkMode: "class",
-	plugins: [require("preline/plugin")],
+	plugins: [require("preline/plugin"),require('@tailwindcss/typography')],
 }

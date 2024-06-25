@@ -1,4 +1,5 @@
 ---
+import Nav from "../components/global/Nav.astro";
 import HAbout from "../components/home/HAbout.astro";
 import HAbout2 from "../components/home/HAbout2.astro";
 import HBlogs from "../components/home/HBlogs.astro";
@@ -12,13 +13,13 @@ import MainLayout from "../layouts/MainLayout.astro";
 ---
 
 <MainLayout>
-	<!-- <HHero /> -->
-	<THero />
+	<Nav />
+	<HHero />
 	<HAbout />
 	<HAbout2 />
 	<HPillars />
 	<HCTA />
-	<!-- <HTestimonials />
+	<HTestimonials />
 	<HBlogs />
-	<HYouTube /> -->
+	<HYouTube />
 </MainLayout>
