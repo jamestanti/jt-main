@@ -52,7 +52,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		font-style: italic;
 	}
 </style>
-<MainLayout>
+<MainLayout {title} {description}>
 
 	<Nav />
 
@@ -63,7 +63,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 	  <div class="flex justify-between items-center mb-6">
 		<div class="flex w-full sm:items-center gap-x-5 sm:gap-x-3">
 		  <div class="flex-shrink-0">
-			<img class="size-12 rounded-full" src="https://storage.googleapis.com/msgsndr/w3yWA6B5DKg1s1vpmFKk/media/664cdae8cdcdd313f7cbb8dc.png" alt="Image Description">
+			<img class="size-12 rounded-full" src="https://storage.googleapis.com/msgsndr/w3yWA6B5DKg1s1vpmFKk/media/664cdae8cdcdd313f7cbb8dc.png" alt={title}>
 		  </div>
   
 		  <div class="grow">
@@ -193,6 +193,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 
 
 	<HCTA />
+	<Footer />
 </MainLayout>
 
 
