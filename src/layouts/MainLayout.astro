@@ -1,10 +1,13 @@
 ---
+import MetaHead from "../components/seo/MetaHead.astro";
 
+const { title, description, heroImage} = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en">
   <head>
+    <MetaHead title={title} description={description} />
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
