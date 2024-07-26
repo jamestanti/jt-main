@@ -7,7 +7,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://jamestanti.com',
+  site: 'https://www.jamestanti.com',
   integrations: [mdx(), sitemap(), tailwind()],
   output: "server",
   adapter: cloudflare()
