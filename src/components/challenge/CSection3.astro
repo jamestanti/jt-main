@@ -1,0 +1,64 @@
+---
+const content = [
+    {
+        headline: "Mindset Mastery",
+        subheadline: "Transform your beliefs and unleash your inner champion."
+    },
+    {
+        headline: "Trust Building",
+        subheadline: "Become the advisor your clients can't live without."
+    },
+    {
+        headline: "Action Acceleration",
+        subheadline: "Learn the secrets of high-performance sales teams."
+    },
+    {
+        headline: "Prospecting Power-Ups",
+        subheadline: "Attract a flood of qualified leads."
+    },
+    {
+        headline: "Sales Explosion",
+        subheadline: "Close deals with confidence and finesse."
+    },
+    {
+        headline: "Referral Magnetism",
+        subheadline: "Turn happy customers into your biggest advocates."
+    }
+];
+---
+
+<!-- Icon Blocks -->
+<div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <!-- Title -->
+    <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
+        <h2 class="text-2xl font-bold md:text-3xl md:leading-tight text-gray-800 dark:text-neutral-200">
+            This challenge WILL PUSH YOU to be at your GREATEST! 
+        </h2>
+        <p class="mt-2 text-gray-600 dark:text-neutral-400">
+            You'll face setbacks, hear "no" more than you'd like, and want to quit. But I'll be there, reminding you of your WHY and helping you rise above the challenges.
+        </p>
+        <p class="mt-2 text-gray-600 dark:text-neutral-400">Imagine This:</p>
+      </div>
+      <!-- End Title -->
+    <div class="max-w-2xl mx-auto grid sm:grid-cols-2 lg:grid-cols-2 items-center gap-6">
+      <!-- Card -->
+      {content.map((item,i) => (
+        <a class="group flex gap-y-6 size-full hover:bg-gray-100 focus:outline-none focus:bg-gray-100 rounded-lg p-5 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800" href="#joinhere">
+        <svg class="shrink-0 size-8 text-gray-800 mt-0.5 me-6 dark:text-neutral-200" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-check"><path d="M18 6 7 17l-5-5"/><path d="m22 10-7.5 7.5L13 16"/></svg>
+        <div>
+          <div>
+            <h3 class="block font-bold text-gray-800 dark:text-white">{item.headline}</h3>
+            <p class="text-gray-600 dark:text-neutral-400">{item.subheadline}</p>
+          </div>
+  
+          <p class="mt-3 inline-flex items-center gap-x-1 text-sm font-semibold text-gray-800 dark:text-neutral-200">
+            Join The Challenge
+            <svg class="shrink-0 size-4 transition ease-in-out group-hover:translate-x-1 group-focus:translate-x-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </p>
+        </div>
+      </a>
+      ))}
+      <!-- End Card -->
+    </div>
+  </div>
+  <!-- End Icon Blocks -->

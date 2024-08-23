@@ -1,0 +1,44 @@
+---
+const copy = {
+    list: [
+        "Waking up 90 days from now with double the income.",
+        "Taking that dream vacation you've always put off.",
+        "Providing for your loved ones in ways you never thought possible.",
+        "Becoming the confident, unstoppable sales machine you were born to be.",
+        "This isn't some pie-in-the-sky dream. It's achievable, and I'm here to guide you every step of the way."
+    ]
+}
+---
+
+<!-- FAQ -->
+<div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <!-- Title -->
+    <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
+      <h2 class="text-2xl font-bold md:text-3xl md:leading-tight text-gray-800 dark:text-neutral-200">
+        Congratulations! You've just taken the first step towards doubling your sales.
+      </h2>
+      <p class="mt-2 text-gray-600 dark:text-neutral-400">
+        By joining this challenge, you're signaling to the universe that you're ready for MORE. Maybe your sales are good... but deep down, you know you're capable of greatness.
+      </p>
+      <p class="mt-2 text-gray-600 dark:text-neutral-400">Imagine This:</p>
+    </div>
+    <!-- End Title -->
+  
+    <div class="max-w-5xl mx-auto text-center">
+      <!-- Grid -->
+      <div class="grid gap-6 md:gap-12">
+        {copy.list.map((item,i) => (
+            <div>
+          <h3 class="text-lg font-semibold text-gray-800 dark:text-neutral-200">
+            {item}
+          </h3>
+        </div>
+        ))}
+        <!-- End Col -->
+  
+        
+      </div>
+      <!-- End Grid -->
+    </div>
+  </div>
+  <!-- End FAQ -->
