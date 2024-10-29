@@ -1,0 +1,135 @@
+---
+const pitchList = [
+  {
+    header: "Sales Leadership Mastery",
+    para: "Discover why top-tier sales leadership is a game-changer in today’s market. This isn’t just another talk—it’s about real transformation for leaders ready to elevate their teams and drive exceptional growth."
+  },
+  {
+    header: "Proven Success Frameworks",
+    para: "Unlock powerful strategies that drive measurable results. From team scaling techniques to advanced leadership frameworks, gain insights you can implement immediately to see your team thrive."
+  },
+  {
+    header: "Solutions to Sales Leadership Challenges",
+    para: "Learn how to tackle common roadblocks head-on. We’ll dive into actionable solutions for overcoming resistance and unlocking your team’s highest potential."
+  },
+  {
+    header: "Live, Personalized Q&A",
+    para: "Get answers to your most pressing sales leadership questions. This is your chance to receive real-time insights tailored to your unique challenges."
+  },
+  {
+    header: "Exclusive Bonuses for Attendees",
+    para: "Don’t miss out—attendees receive special access to exclusive mentorship savings and premium tools designed to streamline your leadership journey."
+  },
+  {
+    header: "Step Into Impactful Leadership",
+    para: "Finish the session ready to lead with clarity, confidence, and a fresh perspective on achieving sales success."
+  }
+];
+
+const ctaCopy = "I'm Ready To Learn From You James!";
+const ctaLink = "#cartfunnel";
+---
+
+<!-- ! START FLPitch -->
+<section class="dark bg-black">
+  <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <div class="bg-black px-6 py-8 overflow-hidden rounded-md">
+      <div class="md:max-w-4xl mx-auto">
+        <img
+          src="https://cdn.prod.website-files.com/64f2fa44b0818c378b17052e/65d6a965aa594120635cdbbf_Tome%20daydream.png"
+          alt="James Tanti's Sales Leadership Masterclass"
+        />
+      </div>
+      <div
+        class="max-w-5xl mx-auto bg-white px-2 md:px-8 py-10 mt-4 rounded-md"
+      >
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-xl md:text-3xl">
+            <span class="text-lg leading-snug md:text-2xl"
+              >"In Just 75 minutes, I’ll reveal the Most GAME-CHANGING</span
+            >
+            <br />
+            <span class="font-bold text-2xl md:text-4xl my-1 inline-block"
+              >Sales Leadership Frameworks I've perfected over 30 years—strategies that have empowered sales teams to break revenue records, exceed targets, and lead with unstoppable confidence...</span
+            >
+            <br />
+            <span class="text-lg leading-snug md:text-2xl"
+              >And Then Give You <span class="underline"
+                >The Easiest, No-Nonsense Playbook</span
+              > to elevate your leadership, streamline your sales processes, and achieve sustainable growth—all without sacrificing your time or budget. If you're ready to lead like a pro and maximize your team’s potential, this masterclass is for you!"</span
+            >
+          </h2>
+        </div>
+        <div class="max-w-3xl mx-auto text-center">
+          <h3 class="my-8 italic text-lg">
+            In this power-packed 75 minute session on November 15th, you'll unlock
+            the secrets to:
+          </h3>
+        </div>
+        {
+          pitchList.map((item, i) => (
+            <div class="max-w-3xl mx-auto text-center">
+              <div class="mb-4 border-2 border-[#5a6dff] rounded-md py-4 px-2">
+                <h4 class="text-2xl bg-blue-500 text-white inline-block px-4 py-1 rounded-sm mb-2">
+                  {item.header}
+                </h4>
+                <p class="text-lg">{item.para}</p>
+              </div>
+            </div>
+          ))
+        }
+        <!-- Buttons -->
+        <div class="mt-8 gap-3 flex justify-center items-center">
+          <svg
+            class="size-24 text-black"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-move-right"
+            ><path d="M18 8L22 12L18 16"></path><path d="M2 12H22"></path></svg
+          >
+          <a
+            class="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-[#AE8625] via-[#d2b25c] to-[#d2ac47] hover:from-[#d2ac47] hover:via-[#edc967] hover:to-[#AE8625] scale-95 hover:scale-100 duration-100 border border-transparent text-white text-lg md:text-2xl font-medium rounded-md focus:outline-none focus:from-violet-600 focus:to-blue-600 py-3 px-4"
+            href={ctaLink}
+          >
+            {ctaCopy}
+            <svg
+              class="shrink-0 size-4"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg
+            >
+          </a>
+          <svg
+            class="size-24 text-black"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-move-left"
+            ><path d="M6 8L2 12L6 16"></path><path d="M2 12H22"></path></svg
+          >
+        </div>
+        <!-- End Buttons -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ! END FLPitch -->

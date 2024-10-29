@@ -1,0 +1,15 @@
+---
+const copy = {
+    headline: "James Tanti's Sales Leadership Masterclass",
+}
+
+const {headline=copy.headline} = Astro.props;
+---
+
+<!-- ! START FLAnnounce -->
+<section class="bg-black">
+    <div class="max-w-4xl mx-auto text-center py-2">
+        <p class="text-white">{headline}</p>
+    </div>
+</section>
+<!-- ! END FLAnnounce -->
