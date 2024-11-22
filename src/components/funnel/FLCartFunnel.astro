@@ -1,0 +1,95 @@
+---
+const ctaCopy = "I Want To Join This Masterclass!"
+const ctaLink = "#cartfunnel"
+const date = "December 5, 2024 @ 1 PST"
+---
+
+<section class="" id="cartfunnel">
+    <section class="dark">
+        <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <div class="max-w-5xl mx-auto py-8 px-6 border-4 rounded-md bg-black text-white border-[#5a6dff]">
+                <div class="text-center max-w-4xl mx-auto">
+                    <h2 class="text-2xl text-gray-800 font-bold sm:text-3xl lg:text-4xl lg:leading-tight">
+                      <span class="dark:bg-clip-text dark:bg-gradient-to-tl dark:from-[#fff720] dark:to-[#fff948] dark:text-transparent">James Tanti's Sales Leadership Masterclass</span>
+                    </h2>
+                </div>
+                <div class="flex gap-2 text-gray-200 mx-auto justify-center py-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-calendar-days"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/><path d="M8 14h.01"/><path d="M12 14h.01"/><path d="M16 14h.01"/><path d="M8 18h.01"/><path d="M12 18h.01"/><path d="M16 18h.01"/></svg>
+                    <p class="text-center">{date}</p>
+                </div>
+    
+                <div class="max-w-4xl mx-auto text-center pb-6">
+                    
+                  
+                
+                  <div id="countdown" class="max-w-2xl mx-auto text-center flex justify-center pb-10 gap-2">
+                    <div class="overflow-hidden rounded-md">
+                      
+                      <div class="text-slate-900 bg-white text-3xl px-2"><span id="dayss"></span></div>
+                      <div class="text-white bg-red-600 px-2"><span>DAYS</span></div>
+                    </div>
+                    <div class="overflow-hidden rounded-md">
+                      
+                      <div class="text-slate-900 bg-white text-3xl px-2"><span id="hourss"></span></div>
+                      <div class="text-white bg-red-600 px-2"><span>HRS</span></div>
+                    </div>
+                    <div class="overflow-hidden rounded-md">
+                      
+                      <div class="text-slate-900 bg-white text-3xl px-2"><span id="minutess"></span></div>
+                      <div class="text-white bg-red-600 px-2"><span>MINS</span></div>
+                    </div>
+                    <div class="overflow-hidden rounded-md">
+                      
+                      <div class="text-slate-900 bg-white text-3xl px-2"><span id="secondss"></span></div>
+                      <div class="text-white bg-red-600 px-2"><span>SECS</span></div>
+                    </div>
+                </div>
+    
+                <div>
+                    <h3 class="text-2xl md:text-3xl md:leading-snug">Register and Join The Masterclass Today!</h3>
+                    <span>Please fill out the form below</span>
+                </div>
+                 
+            </div>
+        </div>
+    </section>
+    
+   
+    <div class="">
+        <iframe src="https://api.leadconnectorhq.com/widget/survey/hzgwJZCfIMS7Qobjk8Zi" style="border:none;width:100%;" scrolling="no" id="hzgwJZCfIMS7Qobjk8Zi" title="Sales Leadership Masterclass"></iframe>
+<script src="https://link.msgsndr.com/js/form_embed.js"></script>
+    </div>
+</section>
+
+<script is:inline>
+    // Set the target date (October 9, 2024 12:00:00 PM EST)
+    const targetDate = new Date("December 4, 2024 13:00:00 PST").getTime();
+    
+    // Update the countdown every second
+    const countdown = setInterval(function() {
+    
+      // Get today's date and time
+      const now = new Date().getTime();
+    
+      // Calculate the time difference
+      const difference = targetDate - now;
+    
+      // Calculate days, hours, minutes, and seconds
+      const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+    
+      // Update the individual div elements
+      document.getElementById("dayss").innerHTML = days;
+      document.getElementById("hourss").innerHTML = hours;
+      document.getElementById("minutess").innerHTML = minutes;
+      document.getElementById("secondss").innerHTML = seconds;
+    
+      // If the countdown is finished, display a message
+      if (difference < 0) {
+        clearInterval(countdown);
+        document.getElementById("countdown").innerHTML = "Countdown expired!";
+      }
+    }, 1000);
+    </script>
