@@ -1,0 +1,67 @@
+---
+const list = [
+    "How the world's most accomplished and influential people THINK",
+    "Why you’ve been so exhausted (and what to do about it immediately)",
+    "Why most people FAIL at managing their time and day",
+    "The #1 secret you MUST follow to have more INFLUENCE with people",
+    "How to define your purpose, get rid of distraction, and FINALLY gain momentum in life"
+]
+---
+<!-- Icon Blocks -->
+<div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <!-- Grid -->
+    <div class="grid md:grid-cols-2 gap-12">
+      <div class="lg:w-3/4">
+        <h2 class="text-3xl text-gray-800 font-bold lg:text-4xl dark:text-white">
+          My name is James Tanti, and I CAN HELP YOU!
+        </h2>
+        <p class="mt-3 text-gray-800 dark:text-neutral-400">
+            I coached and mentored business professionals, sales leaders and
+            entrepreneurs to build their enterprises and enhance their lives for over 15 years. I’m also one
+            of 200 elite Certified High Performance Coaches™ in the world.
+        </p>
+        <p class="mt-3 text-gray-800 dark:text-neutral-400">
+            I know you’re trying to succeed more and just keep everything together, so I want to teach you
+six simple principles you can use to better master your mind, body, and ability to be more
+productive and persuasive.
+        </p>
+        <p class="mt-3 text-gray-800 dark:text-neutral-400">
+            If you have just 15 minutes to
+            fill out a questionnaire, then I’d like to teach you:
+        </p>
+        <!-- <p class="mt-5">
+          <a class="inline-flex items-center gap-x-1 text-sm text-blue-600 decoration-2 hover:underline focus:outline-none focus:underline font-medium dark:text-blue-500" href="#">
+            Contact sales to learn more
+            <svg class="shrink-0 size-4 transition ease-in-out group-hover:translate-x-1 group-focus:translate-x-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </a>
+        </p> -->
+      </div>
+      <!-- End Col -->
+  
+      <div class="space-y-6 lg:space-y-5">
+        <!-- Icon Block -->
+        {
+            list.map((item,i) => (
+            <div class="flex gap-x-5 sm:gap-x-8">
+            <span class="shrink-0 inline-flex justify-center items-center size-[46px] rounded-full border border-gray-200 bg-white text-gray-800 shadow-sm mx-auto dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-200">
+                <svg class="shrink-0 size-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check-check"><path d="M18 6 7 17l-5-5"/><path d="m22 10-7.5 7.5L13 16"/></svg>
+            </span>
+            <div class="grow">
+                <h3 class="text-base sm:text-lg font-semibold text-gray-800 dark:text-neutral-200">
+                    {item}
+                </h3>
+            </div>
+            </div>
+            ))
+        }
+        <!-- End Icon Block -->
+  
+        
+  
+       
+      </div>
+      <!-- End Col -->
+    </div>
+    <!-- End Grid -->
+  </div>
+  <!-- End Icon Blocks -->
