@@ -7,6 +7,7 @@ import FormattedDate from "../components/FormattedDate.astro";
 import MainLayout from "./MainLayout.astro";
 import Nav from "../components/global/Nav.astro";
 import HCTA from "../components/home/HCTA.astro";
+import HFooter from "../components/home/HFooter.astro";
 
 type Props = CollectionEntry<"blog">["data"];
 
@@ -274,4 +275,5 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 	<!-- End Sticky Share Group -->
 
 	<HCTA />
+	<HFooter />
 </MainLayout>
