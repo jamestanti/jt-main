@@ -1,5 +1,12 @@
 ---
-
+const content = {
+  header: "Get a FREE Copy of James Tanti's 10 DAILY HABITS OF HIGH ACHIEVERS",
+  img: "https://storage.googleapis.com/msgsndr/eVZCTmUpFBz5E8QcsJDI/media/679d30e31363caf8d37c0ea8.png",
+  alt: "James Tanti's 10 Daily Habits of High Achievers",
+  p: "Unlock the Secrets to High Achievement – Download Your FREE Guide Today!",
+  url: "https://app.gohighlevel.com/v2/preview/zobUzxO9jfXqojCtcG9H?",
+  button: "GET YOUR COPY HERE",
+}
 ---
 
 <div id="cookies-with-stacked-buttons" class="fixed bottom-0 end-0 z-[60] sm:max-w-sm w-full mx-auto p-6">
@@ -8,7 +15,7 @@
       <div class="flex justify-between gap-x-5">
         <div class="grow">
           <h2 class="font-semibold text-gray-800 dark:text-white">
-            Do You Want To Double Your Sales In 90 Days or Less?
+            {content.header}
           </h2>
         </div>
         <button type="button" class="inline-flex rounded-full p-2 text-gray-500 hover:bg-white focus:outline-none focus:bg-white dark:text-neutral-300 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800" data-hs-remove-element="#cookies-with-stacked-buttons">
@@ -16,15 +23,15 @@
           <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
         </button>
       </div>
-      <img src="https://storage.googleapis.com/msgsndr/eVZCTmUpFBz5E8QcsJDI/media/66edb865d620d5f3a13e9145.png" alt="Double In 90 Challenge">
+      <img src={content.img} alt={content.alt}>
       <p class="mt-2 text-sm text-gray-800 dark:text-neutral-200">
-        Get The Proper Framework In Doubling Your Sales In 90 Days And Achieve Great Results Today! Learn From An Industry Expert Today!
+        {content.p}
       </p>
       <div class="mt-5 mb-2 w-full flex gap-x-2">
       </div>
       <div class="grid w-full">
-        <a type="button" class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-blue-500 text-white hover:text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800 duration-150" href="/dys90-challenge" target="_blank">
-          Join The Challenge
+        <a type="button" class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-blue-500 text-white hover:text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800 duration-150" href={content.url} target="_blank">
+          {content.button}
         </a>
       </div>
     </div>
