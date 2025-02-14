@@ -1,4 +1,26 @@
 ---
+
+const img = [
+  {
+    imgUrl: "https://storage.googleapis.com/msgsndr/eVZCTmUpFBz5E8QcsJDI/media/67ad0dba773f0206492d369b.png",
+  },
+  {
+    imgUrl: "https://storage.googleapis.com/msgsndr/eVZCTmUpFBz5E8QcsJDI/media/67ad0dbad5b739bd330926a5.png",
+  },
+  {
+    imgUrl: "https://storage.googleapis.com/msgsndr/eVZCTmUpFBz5E8QcsJDI/media/67ad0dbafeff7eb2b2ee1e2b.png",
+  },
+  {
+    imgUrl: "https://storage.googleapis.com/msgsndr/eVZCTmUpFBz5E8QcsJDI/media/67ad0dbac9187f64e8e0651d.png",
+  },
+  {
+    imgUrl: "https://storage.googleapis.com/msgsndr/eVZCTmUpFBz5E8QcsJDI/media/67ad0dba423daf6dd6d16a19.png",
+  },
+  {
+    imgUrl: "https://storage.googleapis.com/msgsndr/eVZCTmUpFBz5E8QcsJDI/media/67ad0dba131931f2bda33970.png",
+  },
+]
+
 const items = [
     {
         name: "Clarity",
@@ -44,23 +66,31 @@ const items = [
         <!-- Title -->
     <div class="mt-5 max-w-2xl text-center mx-auto">
       <h2 class="block font-bold text-gray-800 text-4xl md:text-5xl lg:text-6xl dark:text-neutral-200">
-        Pillars Of Trust
+        Our Beacons of Trust
       </h2>
     </div>
     <div class="mt-5 max-w-3xl text-center mx-auto">
-      <p class="text-lg text-gray-600 dark:text-neutral-400">Trust is NOT stated it is earned! Extend trust in your personal & professional life by embodiing the below pillars</p>
+      <p class="text-lg text-gray-600 dark:text-neutral-400">Below are the guiding principles that create and strengthen trust:</p>
     </div>
     </div>
 
     <!-- End Title -->
         <!-- Grid -->
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div class="grid grid-cols-3 gap-6">
           
       
-         
+         {
+          img.map((item,i) => (
+          <div class="h-36 sm:h-56 flex flex-col justify-center items-center border border-gray-200 rounded-xl text-center p-4 md:p-5 dark:border-neutral-700">
+  <div class="mt-3 w-32 h-32 sm:w-40 sm:h-40 overflow-hidden flex justify-center items-center">
+    <img class="w-full h-full object-cover" src={item.imgUrl} alt="">
+  </div>
+</div>
+          ))
+         }
       
           
-      
+{/*       
           <!-- Icon Block -->
           {items.map((item,i) => (
             <div class="h-36 sm:h-56 flex flex-col justify-center border border-gray-200 rounded-xl text-center p-4 md:p-5 dark:border-neutral-700">
@@ -78,7 +108,7 @@ const items = [
             </div>
           </div>
           ))}
-          <!-- End Icon Block -->
+          <!-- End Icon Block --> */}
       
           
       
@@ -89,6 +119,13 @@ const items = [
           
         </div>
         <!-- End Grid -->
+        <div class="mt-5 max-w-3xl text-center mx-auto">
+          <p class="text-lg text-gray-600 dark:text-neutral-400">By consistently embodying these trust principles, leaders and organizations become
+            beacons that attract and retain more customers, employees, and partners.
+            This accumulated trust acts as a form of currency, creating better customer
+            experiences, higher employee engagement, increased growth and more results from
+            less effort.</p>
+        </div>
       </div>
 </section>
 <!-- ! END SECTION HPillars -->
