@@ -9,6 +9,15 @@ const template = [
     },
 ]
 
+const fixEncoding = (text) => {
+    return text
+        .replace(/â€™/g, "’") // Fix apostrophes
+        .replace(/â€œ/g, "“") // Fix opening quotes
+        .replace(/â€�/g, "”") // Fix closing quotes
+        .replace(/â€”/g, "—") // Fix em dashes
+        .replace(/â€¦/g, "…"); // Fix ellipses
+};
+
 const content = [
 {
         heading: "What is High Performance Coaching and how does it work?",
@@ -53,8 +62,8 @@ const content = [
         id: "",
     },
     {
-        heading: "I am doing a great job growing my business and leading in my industry. What can a performance coach do for me…?",
-        paragraph: "If you’re thriving in business, congratulations on your success! But here’s a question—how are the other areas of your life? Are you truly winning in every aspect, or is something missing? Many high achievers who dominate in business struggle in their relationships, health, or sense of fulfillment. You’ve likely heard the saying, “What does it profit a man to gain the whole world but lose his soul?” I believe success without fulfillment is failure—your bank account may be overflowing, yet you might still feel an emptiness inside. Then again, maybe you are balanced, blissful, and crushing it in every way—but as a leader, who do you confide in? Discussing challenges with less experienced team members can unintentionally sow seeds of doubt, affecting their confidence in your vision. And doubt, once planted, can be a dangerous force. What blind spots are you missing that could impact the future success of your business? Partnering with a performance coach gives you a powerful soundboard, helping you gain clarity and confidence for your next bold move. Nobody cares more about your goals than you—and your coach. This could be the beginning of a powerful and mutually beneficial partnership. If you’re hungry for more and believe performance coaching can support your brighter future, make the decision to explore it. Click the link below to apply for a complimentary one-hour session—let’s do this!",
+        heading: "I am doing a great job growing my business and leading in my industry. What can a performance coach do for me?",
+        paragraph: fixEncoding("If youre thriving in business, congratulations on your success! But here’s a question—how are the other areas of your life? Are you truly winning in every aspect, or is something missing? Many high achievers who dominate in business struggle in their relationships, health, or sense of fulfillment. You’ve likely heard the saying, “What does it profit a man to gain the whole world but lose his soul?” I believe success without fulfillment is failure—your bank account may be overflowing, yet you might still feel an emptiness inside. Then again, maybe you are balanced, blissful, and crushing it in every way—but as a leader, who do you confide in? Discussing challenges with less experienced team members can unintentionally sow seeds of doubt, affecting their confidence in your vision. And doubt, once planted, can be a dangerous force. What blind spots are you missing that could impact the future success of your business? Partnering with a performance coach gives you a powerful soundboard, helping you gain clarity and confidence for your next bold move. Nobody cares more about your goals than you—and your coach. This could be the beginning of a powerful and mutually beneficial partnership. If you’re hungry for more and believe performance coaching can support your brighter future, make the decision to explore it. Click the link below to apply for a complimentary one-hour session—let’s do this!"),
         video: "https://storage.googleapis.com/msgsndr/eVZCTmUpFBz5E8QcsJDI/media/67a12aecaaffd357da498dd7.mp4",
         id: "",
     },
@@ -108,6 +117,10 @@ const content = [
         id: "",
     },
 ]
+content.forEach((item) => {
+    item.paragraph = fixEncoding(item.paragraph);
+});
+
 ---
 
 <!-- FAQ -->
